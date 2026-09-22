@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask a question or get help
+    url: mailto:support@getchatexport.com
+    about: Support goes to email and gets an answer from a person.
+  - name: Report a security problem
+    url: https://github.com/ChatExport/ChatExport/blob/main/SECURITY.md
+    about: Not here. Please read this first.
+  - name: Notes on Apple's message format
+    url: https://github.com/ChatExport/ChatExportKnowledge
+    about: Corrections to the sms.db, attributedBody and RSMF notes go in that repository.
