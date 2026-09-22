@@ -1,0 +1,60 @@
+name: Problem with the program
+description: Something does not work, or a document came out wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not paste real messages. Nobody here needs your conversations
+        to reproduce a bug, and this is a public tracker.
+
+        For anything with a security angle, write to support@getchatexport.com
+        instead. See SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: ChatExport version
+      description: Shown in the app, or read it off the installer file name.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: What were you exporting from
+      options:
+        - An iPhone backup
+        - A WhatsApp "Export chat" file
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: ios
+    attributes:
+      label: iOS version of the backup
+      description: >
+        Only if the source is a backup. Much of what this program does is
+        version dependent, so a report with no version attached cannot be
+        checked against anything. "Do not know" is a fine answer.
+      placeholder: "iOS 18.5, or: do not know"
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 24H2"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log file
+      description: >
+        Optional, and the single most useful thing you can attach. The program
+        keeps local logs; they describe what the program did, not what your
+        messages say.
+      render: text
