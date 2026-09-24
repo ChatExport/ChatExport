@@ -53,7 +53,8 @@ Your messages are never translated. They appear as they were sent.
 **The current installer is on the website: <https://getchatexport.com/download/>**,
 which also prints its SHA256 so you can check the file before you trust it.
 
-Releases in this repository carry the change history. Assets attached to
+Releases in this repository carry the change history, and
+[`CHANGELOG.md`](CHANGELOG.md) collects it in one page. Assets attached to
 releases up to 0.5.1 are older builds; the website always has the current one.
 
 ## About the SmartScreen warning
