@@ -37,6 +37,13 @@ Every export is fingerprinted with **SHA256**, shown on the success screen and
 written beside the file as `<file>.sha256`, in the form that `sha256sum -c` and
 `certutil -hashfile` both accept.
 
+The same invented conversation, written out in all five formats, is in
+[`samples/`](samples/) — with the SHA256 sidecars, so you can run the check
+yourself before deciding whether the fingerprint means anything to you. It
+deliberately contains an edited message, an unsent one and a deleted one
+recovered from Recently Deleted, because those are the cases a transcript gets
+argued about.
+
 The document can be written in any of fourteen languages, and that choice is
 separate from the language of the program itself, which also speaks fourteen.
 Your messages are never translated. They appear as they were sent.

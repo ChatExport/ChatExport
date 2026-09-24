@@ -1,0 +1,6 @@
+# The sample exports are published so that the SHA-256 sidecars beside them
+# verify against the files people actually download. Any end-of-line
+# translation rewrites the bytes and breaks every digest in samples/SHA256SUMS,
+# on the platforms where the translation differs from the one that produced the
+# files. Nothing under samples/ may be normalised, text or not.
+samples/** -text
